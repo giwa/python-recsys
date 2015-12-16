@@ -1,5 +1,5 @@
 import sys
-from numpy import nan, mean
+from numpy import nan, mean, std
 
 #To show some messages:
 import recsys.algorithm
@@ -57,7 +57,7 @@ for run in RUNS:
 		        rmse_svd_neig.add(rating, pred_rating_svd_neig)
 		        mae_svd_neig.add(rating, pred_rating_svd_neig)
 
-		    print "\rProcessed test rating %d" % i,                                        
+		    print "\rProcessed test rating %d" % i,
 		    sys.stdout.flush()
 
 		    i += 1
